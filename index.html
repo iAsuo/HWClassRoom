@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <title>Classroom平台首页</title>
 </head>
 <body>
@@ -35,35 +36,24 @@
 
         </div>
 
-    <!-- 头部轮播 -->
-    
-        <!--提示：不需要实现轮播图效果-->
-    <div class="header clearfix">
-        <a href="javascript:void()">
-            <div class="child child-1"></div>
-        </a>
-        <a href="javascript:void()">
-            <div class="child child-2"></div>
-        </a>
-        <a href="javascript:void()">
-            <div class="child child-3"></div>
-        </a>
-        <a href="javascript:void()">
-            <div class="child child-4"></div>
-        </a>
-        <a href="javascript:void()">
-            <div class="child child-5"></div>
-        </a>
+    <!-- 头部轮播 -->  
 
-        <!--轮播切换-->
-        <div class="cutover">
-            <span class="current"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slider1"></div>
+            <div class="swiper-slide slider2"></div>
+            <div class="swiper-slide slider3"></div>
+            <div class="swiper-slide slider4"></div>
+            <div class="swiper-slide slider5"></div>
         </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>  
     </div>
+    
 
     <div class="content" id="content">
         <div class="warpper" id="warpper">
@@ -554,6 +544,9 @@
         var son=document.getElementById('warpper');
         contentH.style.height=son.offsetHeight+'px';
     </style>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.js"></script>
+
 </body>
 
 </html>

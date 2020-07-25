@@ -108,7 +108,7 @@ clear:both;
 }
 
 /*header头部  轮播图 */
-.header {
+.swiper-container{
     margin-top: 60px;
     height: 370px;
     width: 100%;
@@ -116,61 +116,37 @@ clear:both;
     position: relative;
 }
 
-.header .child-1 {
+.swiper-container .slider1 {
     background: url(https://res.devcloud.huaweicloud.com/obsdevui/diploma/8.1.12.003/banner-4.883a698e6a7fc4d886c6.jpg) no-repeat;
 }
 
-.header .child-2 {
+.swiper-container .slider2{
     background: url(https://res.devcloud.huaweicloud.com/obsdevui/diploma/8.1.12.003/banner-1.5a1de8473b0940dd9515.jpg) no-repeat;
 }
 
-.header .child-3 {
+.swiper-container .slider3{
     background: url(https://res.devcloud.huaweicloud.com/obsdevui/diploma/8.1.12.003/banner-2.d69113832d9d49869f17.jpg) no-repeat;
 }
 
-.header .child-4 {
+.swiper-container .slider4{
     background: url(https://res.devcloud.huaweicloud.com/obsdevui/diploma/8.1.12.003/banner-3.78529fb07dac84804fe4.jpg) no-repeat;
 }
 
-.header .child-5 {
+.swiper-container .slider5 {
     background: url(https://res.devcloud.huaweicloud.com/obsdevui/diploma/8.1.12.003/banner-5.ca2846867357442a092f.jpg) no-repeat;
 }
 
-.header .child {
+.swiper-container .swiper-slide{
     width: 100%;
     height: 370px;
-    float: left;
     background-size: 100% 100%;
 }
+ .swiper-pagination-bullet-active {
+    background: rgb(235,111,111);
+    width:28px !important;
+    border-radius: 5px !important;
 
-/* 轮播图下切换圆点 */
-.cutover {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    /* right: 0px; */
-    text-align: right;
-    padding-right: 25px;
-    margin-left: -95px;
-
-}
-
-.cutover span {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: rgb(161, 161, 161);
-    border-radius: 50%;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.cutover span.current {
-    padding: 0 10px;
-    border-radius: 20px;
-    background: rgb(112, 121, 248);
-
-}
+ }
 
 /* 内容界面 */
 .content {
@@ -183,7 +159,6 @@ clear:both;
     top: -25px;
     border-radius: 5px;
     box-shadow: 0 0 10px #bec0c0;
-    /* height: 100%; */
 }
 .content .intro-content {
     display: flex;
@@ -208,9 +183,7 @@ clear:both;
 
 .content .class-box {
     width: 100%;
-    /* position: absolute; */
     padding-top: 160px;
-    /* height:100%; */
 }
 .content .market-box .class-title,
 .content .class-box .class-title {
@@ -218,7 +191,6 @@ clear:both;
     margin: 0 auto;
     text-align: center;
     color: #5e6678;
-    /* line-height: ; */
 }
 .content .market-box .class-title .class-yun,
 .content .class-box .class-title .class-yun {
@@ -306,12 +278,10 @@ clear:both;
 .content .class-box  .class-content .card-wrp {
     padding: 0 20px;
 }
-
 .content .market-box .class-content .card-name,
 .content .class-box .class-content .card-name {
     margin: 16px 0 5px 0;
 }
-
 .content .market-box .class-content .course-name,
 .content .class-box .class-content .course-name {
     font-size: 16px;
@@ -411,7 +381,6 @@ clear:both;
 
 
 
-
  /* 教学市场区域 */
 .content .market-box {    
     width: 100%;
@@ -434,16 +403,12 @@ clear:both;
  }
 
 .content .activity-box .activity-content{
-    width: 100%;    
-    /* height: 30px; */
-    
+    width: 100%;        
 }
 .content .activity-box  .activity-content-item{
-    /* background: #ff8f74; */
     padding-bottom: 30px;
     margin-bottom: 30px;
     border-bottom: 1px solid #e0e0e0;
-    /* overflow: auto; */
 }
 .content .activity-box .activity-itimg{
     margin-right: 30px;
